@@ -65,17 +65,18 @@
     .plan {
         background-color: white;
         border-radius: 25px;
-        padding: 35px 25px;
+        padding: 25px 20px 40px;
         flex: 1;
         min-width: 300px;
         max-width: 380px;
         text-align: center;
         box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-        transition: all 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+        transition: all 0.4s ease, box-shadow 0.4s ease, border 0.4s ease, transform 0.4s ease;
         position: relative;
         opacity: 0;
         transform: translateY(50px);
         border: 2px solid #064e3b;
+        overflow: hidden;
     }
 
     .plan.visible {
@@ -88,6 +89,17 @@
         box-shadow: 0 18px 35px rgba(0,0,0,0.2);
         border: 2px solid #16a34a;
         background: linear-gradient(to bottom right, #f0fdf4, #e6f7e9);
+    }
+
+    .plan img {
+        width: 80px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        transition: transform 0.4s ease;
+    }
+
+    .plan img:hover {
+        transform: scale(1.1);
     }
 
     .plan h2 {
@@ -105,7 +117,7 @@
     .price {
         font-size: 1.9em;
         font-weight: bold;
-        margin: 25px 0;
+        margin: 20px 0;
         color: #16a34a;
     }
 
@@ -127,26 +139,6 @@
         transform: translateY(-3px) scale(1.05);
         box-shadow: 0 12px 25px rgba(0,0,0,0.3);
     }
-
-    .success-message {
-        display: none;
-        background-color: #dcfce7;
-        border: 2px solid #16a34a;
-        color: #065f46;
-        padding: 15px;
-        border-radius: 10px;
-        font-weight: bold;
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 80%;
-        text-align: center;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        animation: fadeIn 0.5s ease-in-out;
-    }
-
-    @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
 
     footer {
         background-color: #064e3b;
@@ -201,6 +193,7 @@
     <div class="plans">
 
         <div class="plan">
+            <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png" alt="Plano Base">
             <h2>📸 Fotos que Vendem (Base)</h2>
             <p>10 melhorias de fotos profissionais</p>
             <p>Perfeito para quem quer realçar produtos e serviços</p>
@@ -210,6 +203,7 @@
         </div>
 
         <div class="plan">
+            <img src="https://cdn-icons-png.flaticon.com/512/2921/2921826.png" alt="Plano Plus">
             <h2>📈 Fotos que Vendem Plus</h2>
             <p>10 melhorias de fotos</p>
             <p>+ 3 posts prontos para Instagram</p>
@@ -220,6 +214,7 @@
         </div>
 
         <div class="plan">
+            <img src="https://cdn-icons-png.flaticon.com/512/2921/2921830.png" alt="Plano Pro">
             <h2>🚀 Fotos que Vendem Pro</h2>
             <p>10 melhorias de fotos</p>
             <p>5 posts personalizados</p>
