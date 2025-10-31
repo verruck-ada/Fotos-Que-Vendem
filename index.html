@@ -209,4 +209,46 @@
             <div class="price">R$ 159,99</div>
             <div class="price-note">Valor já inclui a taxa da maquininha</div>
             <a href="https://link.infinitepay.io/verruck_/VC1DLTAtUg-6OTw0kZ85-150,40" class="btn" target="_blank">💳 Contratar Agora</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9khrT32bBIPm53u53JIEtj3akJkVNEeumTFdo-lXF1wP3rg/viewform?usp=dialog" class="form-btn" target="_blank">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9khrT32bBIPm53u53JIEtj3akJkVNEeumTFdo-lXF1wP3rg/viewform?usp=dialog" class="form-btn" target="_blank">📝 Preencha o Formulário</a>
+        </div>
+
+        <!-- Plano Pro -->
+        <div class="plan">
+            <h2>🚀 Fotos que Vendem Pro</h2>
+            <p>10 melhorias de fotos</p>
+            <p>5 posts personalizados</p>
+            <p>1 cardápio digital exclusivo</p>
+            <p>O pacote completo para destacar sua marca</p>
+            <div class="price">R$ 219,99</div>
+            <div class="price-note">Valor já inclui a taxa da maquininha</div>
+            <a href="https://link.infinitepay.io/verruck_/VC1DLTAtUg-3IdRSLtaer-206,81" class="btn" target="_blank">💳 Contratar Agora</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9khrT32bBIPm53u53JIEtj3akJkVNEeumTFdo-lXF1wP3rg/viewform?usp=dialog" class="form-btn" target="_blank">📝 Preencha o Formulário</a>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>💬 Dúvidas ou pedidos personalizados? Fale conosco!</p>
+    <p>WhatsApp: <a href="https://wa.me/5554984493856?text=Olá,%20quero%20saber%20mais%20sobre%20os%20planos!" target="_blank">(54) 98449-3856</a></p>
+    <p>© 2025 Fotos que Vendem — Todos os direitos reservados.</p>
+</footer>
+
+<a href="https://wa.me/5554984493856?text=Olá,%20quero%20saber%20mais%20sobre%20os%20planos%20do%20site!" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+    const planos = document.querySelectorAll('.plan');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.2 });
+    planos.forEach(plan => observer.observe(plan));
+</script>
+
+</body>
+</html>
